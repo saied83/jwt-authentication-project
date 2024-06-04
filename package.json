@@ -1,0 +1,17 @@
+{
+  "name": "jwt-authentication-project",
+  "version": "1.0.0",
+  "description": "this project is simply a demonstration of how to use jwt authentication with nodejs and expressjs",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "saied83",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.3"
+  }
+}
