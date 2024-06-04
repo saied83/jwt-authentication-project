@@ -4,7 +4,8 @@
   "description": "this project is simply a demonstration of how to use jwt authentication with nodejs and expressjs",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "auth-server": "nodemon authServer.js"
   },
   "author": "saied83",
   "license": "ISC",

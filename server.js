@@ -40,16 +40,6 @@ app.get("/posts", authenticateToken, (req, res) => {
   res.json(posts.filter((post) => post.username === req.user.name));
 });
 
-app.post("/login", (req, res) => {
-  //Authenticate user
-
-  const username = req.body.username;
-  const user = { name: username };
-
-  const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET);
-  res.json({ accessToken: accessToken });
-});
-
 //listen
 app.listen(8000, () => {
   console.log("Server Running on Port: 8000");
